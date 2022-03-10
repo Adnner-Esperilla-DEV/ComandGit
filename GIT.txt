@@ -1,0 +1,52 @@
+git init
+
+//sirve para mostrar el estado actual de mi proyecto
+$git status
+
+//sirve para agregar todos los cambios y archivos al STAGE
+git add .
+git add nombrearchivo
+
+//sirve para guardar los cambios y necesariamente necesita un mensaje
+git commit -m "mensaje"
+
+//sirve para mostrar los commits existentes en ese proyecto
+git log
+
+-----------
+
+//muestra las ramas que tenga el proyecto
+git branch
+
+//para crear una nueva rama
+git branch nombre
+
+//para cambiar de rama
+git checkout nombre_de_la_rama
+
+
+--- revisando cambios ---
+
+//revisar los cambios que hemos hecho en el archivo
+git show nombrearchivo
+
+//para comparar dos archivos necesitamos sus IDs
+git diff id_antiguo id_reciente
+
+//CUANDO HAY DEMASIADO CONTENIDO, les aparece : - para salir de ese modo presionen q
+
+----regresando a ver un archivo en el tiempo
+
+//regresa un solo archivo y lo MODIFICA
+git checkout id_commit nombre_archivo
+
+//regresar al inicio de nuevo
+git checkout nombre_rama nombre_archivo
+
+//regresa a un COMMIT lo demás desaparece
+git reset id_commit --hard
+
+
+
+--trabajando con github
+//git push origin nombre_rama
